@@ -1,0 +1,250 @@
+@font-face {
+    font-family: "Antarctica";
+    src: url(typographie/Antarctica\ Beta-VF.ttf),url(typographie/AntarcticaBeta-Medium.otf), url(typographie/AntarcticaBeta-Regular.otf);
+}
+body {
+    font-family: "Antarctica";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #1A1A1A;
+    color: #C3C3C3;
+}
+
+
+
+header{
+    margin-top: 8px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: none;
+    color: #C3C3C3;
+}
+
+li{
+    list-style: none;
+}
+
+.t-principal {
+    font-size: 34px;
+    color: #F5F5F5;
+
+}
+
+.t-1{
+    font-size: 26px;
+}
+
+
+.t-2{
+    color: #919191;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 2em;
+}
+
+  .bigbox {
+     display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 2em;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0; /* Pour ajouter du padding autour de la navigation */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-t {
+    display: flex;
+}
+
+.nav-t li {
+    margin-right: 50px; /* Espace entre les éléments li */
+}
+
+.nav-t li:last-child {
+    margin-right: 0; /* Pour enlever l'espace après le dernier élément */
+}
+
+
+.e-1 {
+    margin-bottom: 200px;
+}
+
+.e-2 {
+    margin-bottom: 15px;
+}
+
+.container-projet {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espace entre les rangées */
+    width: 100%;
+}
+
+.grid-row {
+    display: flex;
+    gap: 8px; /* Espace entre les items */
+    width: 100%;
+}
+
+.projet {
+    flex: 1;
+    max-width: 50%; /* Pour prendre la moitié de l'espace avec un peu de marge */
+}
+
+
+.bottom {
+margin-bottom: 80px;
+}
+
+.image-teaser-projet, .image-scene-projet {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.image-teaser-projet {
+    height: auto;
+}
+
+
+.image-scene-projet {
+    height: 100%;
+}
+
+footer, .projet-suivant {
+    padding: 15px 0 15px 0;
+    border-top: solid 1px #E3E3E3;
+    margin-top: 120px;
+}
+
+.intro-projet {
+    border-top: solid 1px #635d5d;
+    display: flex;
+    gap: 100px;
+    padding-top: 10px; /* Remplace margin-top par padding-top */
+    margin-bottom: 50px;
+}
+
+
+.haut {
+    display: flex;
+    justify-content: space-between
+;}
+
+.suivant {
+    display: flex;
+    gap: 20%;
+}
+
+.para {
+    margin-top: 16px;
+    margin-right: 50%;
+}
+
+
+/* Container avec flexbox */
+.container {
+    display: flex;
+}
+
+/* Colonne vide pour créer l'espace */
+.column {
+    flex: 1;
+}
+
+
+
+/* Style du texte */
+.para {
+    margin-top: 16px;
+}
+
+/* Style responsive pour les écrans mobiles */
+@media (max-width: 844px) {
+    body{
+        font-size: 16px;
+    }
+    .grid-row {
+        flex-direction: column;
+    }
+
+    .projet {
+        max-width: 100%;
+        margin-bottom: 48px;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .column {
+        flex: none;
+    }
+
+    .t-principal, .t-1 {
+        font-size: 24px;
+        color: #F5F5F5;
+    }
+    
+    .e-1{
+        margin-bottom: 56px;
+    }
+
+    .bigbox {
+        flex-wrap: nowrap;
+
+    }
+
+    footer {
+        margin-top: 54px;
+    }
+
+    .intro-projet {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+    .image-moi {
+        width: 100%;
+        color: red;
+    }
+
+}
+
+
+
+.image-moi {
+    width: 50%;
+    border-radius: 8px;
+}
