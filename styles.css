@@ -233,11 +233,15 @@ footer, .projet-suivant {
     .intro-projet {
         display: flex;
         gap: 16px;
-        flex-direction: column;
     }
     .image-moi {
         width: 100%;
         color: red;
+    }
+
+    .projet-vignette {
+        margin-bottom: 16px;
+
     }
 
 }
