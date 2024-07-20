@@ -2,6 +2,8 @@
     font-family: "Antarctica";
     src: url(typographie/Antarctica\ Beta-VF.ttf),url(typographie/AntarcticaBeta-Medium.otf), url(typographie/AntarcticaBeta-Regular.otf);
 }
+
+
 body {
     font-family: "Antarctica";
     font-style: normal;
@@ -233,6 +235,8 @@ footer, .projet-suivant {
     .intro-projet {
         display: flex;
         gap: 16px;
+        margin-bottom: 32px;
+
     }
     .image-moi {
         width: 100%;
@@ -246,9 +250,17 @@ footer, .projet-suivant {
 
 }
 
-
+.cfc {
+    color:#FF4300
+}
 
 .image-moi {
     width: 50%;
     border-radius: 8px;
 }
+
+.vue {
+    display: flex;
+    align-items:center;
+    gap: 8px;
+} 
