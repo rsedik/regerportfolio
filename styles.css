@@ -3,6 +3,10 @@
     src: url(typographie/Antarctica\ Beta-VF.ttf),url(typographie/AntarcticaBeta-Medium.otf), url(typographie/AntarcticaBeta-Regular.otf);
 }
 
+#nav {
+    position: fixed;
+}
+
 
 body {
     font-family: "Antarctica";
@@ -71,7 +75,6 @@ li{
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0; /* Pour ajouter du padding autour de la navigation */
     width: 100%;
     box-sizing: border-box;
 }
@@ -90,7 +93,7 @@ nav {
 
 
 .e-1 {
-    margin-bottom: 200px;
+    margin-bottom: 120px;
 }
 
 .e-2 {
@@ -197,6 +200,7 @@ footer, .projet-suivant {
 @media (max-width: 844px) {
     body{
         font-size: 16px;
+
     }
     .grid-row {
         flex-direction: column;
@@ -220,7 +224,7 @@ footer, .projet-suivant {
     }
     
     .e-1{
-        margin-bottom: 56px;
+        margin-bottom: 80px;
     }
 
     .bigbox {
@@ -247,8 +251,27 @@ footer, .projet-suivant {
         margin-bottom: 16px;
 
     }
+    
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .grid-row {
+        display: flex;
+        gap: 12px;
+        width: 100%;
+    }
+
+  .projet-suivant {
+
+        margin-top: 0px;
+    }
 
 }
+
 
 .cfc {
     color:#FF4300
@@ -264,3 +287,49 @@ footer, .projet-suivant {
     align-items:center;
     gap: 8px;
 } 
+
+
+
+.accordion {
+margin-top: 16px;
+margin-bottom: 48px;
+}
+
+.accordion-header {
+    padding: 10px 0;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-header .arrow {
+    width: 4px;
+    height: 4px;
+    border: solid #919191;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.accordion-header.active .arrow {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content.open {
+    max-height: 500px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+    transition: max-height 0.3s ease;
+}
+
+
+  
+  
